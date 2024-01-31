@@ -120,3 +120,8 @@ if args.windows_standalone_build:
 
 if args.disable_auto_launch:
     args.auto_launch = False
+
+"""
+强制不输出工作流到图片
+"""
+args.disable_metadata = True
