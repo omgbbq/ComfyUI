@@ -1362,8 +1362,8 @@ class SaveImage:
             # 获取当前日期和时间
             current_datetime = datetime.now()
             # 格式化为年月日格式
-            formatted_date = current_datetime.strftime("%Y%m%d")
-            filename_prefix += formatted_date
+            formatted_date = current_datetime.strftime("%y%m%d")
+            filename_prefix += f"_{formatted_date}"
 
         filename_prefix += self.prefix_append
         full_output_folder, filename, counter, subfolder, filename_prefix = folder_paths.get_save_image_path(filename_prefix, self.output_dir, images[0].shape[1], images[0].shape[0])
